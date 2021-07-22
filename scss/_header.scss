@@ -1,0 +1,14 @@
+.header{
+    background-color: #20948B;
+    display: flex;
+    font-family: 'Do Hyeon', sans-serif ;
+    font-size: 1.5rem;
+      
+    .header__logo{
+        width: 100px;
+        margin: 2%;
+    }
+    .header__btn{
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,57 @@
+.mainContacto{
+    @include main(3%);
+    .mainContacto__titulo{
+        @include tamañoFuentex2(1.5rem)
+    }
+    .mainContacto__formulario{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(4, 25%);
+        grid-template-areas: 
+        "nombre consulta"
+        "email consulta"
+        "telefono consulta"
+        ". btn";
+        background: linear-gradient(rgba(86, 167, 170, 0.2), rgba(255, 166, 0, 0.2) );
+        width: 60%;
+        border: 1px black solid;
+        padding: 5% 0;
+        margin: 5% auto;
+        .mainContacto__izquerda--nombre{
+            grid-area: nombre;
+        }
+        .mainContacto__izquerda--email{
+            grid-area: email;    
+        }
+        .mainContacto__izquerda--telefono{
+            grid-area: telefono;
+        }
+        .mainContacto__consulta{
+            grid-area: consulta; 
+            textarea{
+                width: 80%;
+                height: 80%;
+            }   
+        }
+        .mainContacto__btnEnviar{
+            grid-area: btn;
+            margin: 2%;
+            input{
+                padding: 2.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .mainContacto{
+        .mainContacto__formulario{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+    }
+
+    
+}

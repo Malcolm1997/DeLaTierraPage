@@ -1,0 +1,39 @@
+.mainAlimentacion{
+    @include main(2%);
+    .mainAlimentacion__titulo{
+        margin: 4% 0;
+        @include tamañoFuentex2(1.5rem);
+    }
+    .mainAlimentacion__divContenedores{
+        display: flex;
+        flex-direction: column;
+        margin: 3% 0;
+        margin-bottom: 10%;
+        .mainAlimentacion__parrafo{
+            display: flex;
+            flex-direction: row;
+            margin: 3% 0;
+            .mainAlimentacion__imagen{
+                width: 350px;
+                height: 300px;
+                object-fit: cover;
+            }
+            .mainAlimentacion__texto{
+                @include texto(start);
+            }
+        }
+    }  
+}
+
+@media only screen and ( max-width:1024px){
+    .mainAlimentacion{
+        .mainAlimentacion__divContenedores{
+            .mainAlimentacion__parrafo{
+                flex-direction: column;
+                .mainAlimentacion__imagen{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

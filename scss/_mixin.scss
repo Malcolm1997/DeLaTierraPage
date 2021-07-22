@@ -1,0 +1,19 @@
+@mixin main ($margin-tb) {
+    width: 80%;
+    margin: $margin-tb auto;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+
+@mixin texto ($aling){
+    margin: 4%;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    text-align: $aling;
+    color: rgb(119, 119, 119);
+}
+
+@mixin tamañoFuentex2($size){
+    font-size: $size *2;
+}

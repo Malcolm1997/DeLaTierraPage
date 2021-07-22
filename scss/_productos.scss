@@ -1,0 +1,20 @@
+.mainProductos{
+    @include main (6%);
+    .mainProductos__titulo{
+        @include tamañoFuentex2(1.5rem);
+    }
+    .mainProductos__grupoDeTres{
+        display: flex;
+        justify-content: center;
+        .mainProductos__productoIndividual{
+            width: 30%;
+            .mainProductos__imagenProducto{
+                width: 100%;
+                padding: 5%;
+            }
+            .mainProductos__carrito{
+                width: 10%;
+            }
+        }
+    }
+}

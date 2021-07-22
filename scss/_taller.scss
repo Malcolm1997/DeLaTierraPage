@@ -1,0 +1,21 @@
+.mainTaller{
+    @include main(2%);
+    .mainTaller__titulo{
+        @include tamañoFuentex2(1.5rem);
+
+    }
+    .mainTaller__individual{
+        margin: 5% 0;
+        .mainTaller__imagen{
+            width: 40%;
+        }
+        .mainTaller__carrito{
+            width: 7.5%;
+        }
+        .mainTaller__texto{
+            @include texto (start);
+            @include tamañoFuentex2 (0.5rem);
+        }
+    }
+}
+  

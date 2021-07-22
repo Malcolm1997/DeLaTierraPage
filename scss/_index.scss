@@ -1,0 +1,20 @@
+
+.mainIndex{
+    @include main(5%);
+    .mainIndex__titulo{
+        @include tamañoFuentex2(1.5rem);
+    }
+    .mainIndex__parrafo{
+
+        .mainIndex__subtitulo{
+            margin-top: 4%;
+            @include tamañoFuentex2(1rem);
+        }
+        .mainIndex__texto{
+            @include texto(center);
+            
+        }
+        
+    }
+
+}

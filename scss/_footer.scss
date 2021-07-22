@@ -1,0 +1,73 @@
+.footer{
+    padding: 2.5% 0;
+    display: grid;
+    grid-template-columns: 7.5% 7.5% 7.5% 7.5% 20% 50% ;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "facebook whatsapp instagram tiktok derechos mapa";
+    align-items: center;
+    
+    row-gap: 20px;
+    background: linear-gradient(rgb(255, 166, 0), rgb(86, 167, 170));
+    .footer__redes{
+       margin: 0 auto;
+       text-align: center;
+        }
+        .footer__imagenRedes{
+            width: 35%; 
+            transition: 0.5s;
+        }
+        .footer__imagenRedes:hover {
+            transform: scale(1.25,1.25);
+        }
+    
+    .footer__redes--facebook{
+        grid-area: facebook;
+    }
+    .footer__redes--instagram{
+        grid-area: instagram;
+    }
+
+    .footer__redes--whatsapp{
+        grid-area: whatsapp;
+    }
+
+    .footer__redes--tiktok{
+        grid-area: tiktok;
+    }
+    .footer__derechos{
+        grid-area: derechos;
+        font-family: 'Do Hyeon', sans-serif;
+        margin-bottom:5% ;
+        text-align: center;
+    }
+    .footer__mapa{
+        grid-area: mapa;  
+        iframe{
+            width: 80%;
+        }  
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .footer{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4 , 1fr);
+        grid-template-areas: 
+        "facebook whatsapp"
+        "instagram tiktok"
+        "mapa mapa"
+        "derechos derechos";
+        padding: 0 5px;
+        .footer__redes{
+             .footer__imagenRedes{
+                 width: 30%; 
+            }
+        }
+        .footer__mapa{
+            text-align: center;
+        }
+    
+    }
+}

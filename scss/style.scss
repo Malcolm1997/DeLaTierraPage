@@ -1,0 +1,22 @@
+@import "header";
+@import "mixin";
+@import "index";
+@import "alimentacion";
+@import "productos";
+@import "taller";
+@import "footer";
+@import "contacto";
+
+$textParrafo:'Montserrat', sans-serif;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+
+
+
