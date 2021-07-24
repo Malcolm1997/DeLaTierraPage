@@ -5,8 +5,9 @@
     font-family: 'Staatliches', cursive;
 }
 
-@mixin texto ($aling){
+@mixin texto ($aling, $margin-top){
     margin: 4%;
+    margin-top: $margin-top;
     line-height: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;

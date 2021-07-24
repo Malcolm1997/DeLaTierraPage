@@ -5,15 +5,20 @@
 
     }
     .mainTaller__individual{
-        margin: 5% 0;
+        margin: 3% 0;
         .mainTaller__imagen{
             width: 40%;
+        }
+        .mainTaller__precio{
+            margin-top: 3%;
+            margin-bottom: 0;
+            font-size: 1.25rem;
         }
         .mainTaller__carrito{
             width: 7.5%;
         }
         .mainTaller__texto{
-            @include texto (start);
+            @include texto (start, 4%);
             @include tamañoFuentex2 (0.5rem);
         }
     }

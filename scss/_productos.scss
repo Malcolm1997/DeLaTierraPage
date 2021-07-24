@@ -6,11 +6,17 @@
     .mainProductos__grupoDeTres{
         display: flex;
         justify-content: center;
+        margin: 5% auto;
         .mainProductos__productoIndividual{
             width: 30%;
             .mainProductos__imagenProducto{
                 width: 100%;
                 padding: 5%;
+            }
+            .mainProductos__precio{
+                display: block;
+                font-size: 1.25rem;
+                margin: 3% auto;
             }
             .mainProductos__carrito{
                 width: 10%;

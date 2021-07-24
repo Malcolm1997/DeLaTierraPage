@@ -3,6 +3,12 @@
     .mainContacto__titulo{
         @include tamañoFuentex2(1.5rem)
     }
+    .mainContacto__texto{
+        margin-top: 3%;
+        margin: 3% auto 0 auto;
+        font-size: 1.25rem;
+        color: rgb(80, 80, 80);
+    }
     .mainContacto__formulario{
         display: grid;
         grid-template-columns: repeat(2,50%);

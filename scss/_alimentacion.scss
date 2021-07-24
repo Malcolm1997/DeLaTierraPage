@@ -19,7 +19,7 @@
                 object-fit: cover;
             }
             .mainAlimentacion__texto{
-                @include texto(start);
+                @include texto(start, 4%);
             }
         }
     }  

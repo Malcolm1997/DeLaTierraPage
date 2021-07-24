@@ -5,13 +5,16 @@
         @include tamañoFuentex2(1.5rem);
     }
     .mainIndex__parrafo{
-
+        .mainIndex__imagenSomos{
+            width: 8%;
+            margin: 1%;
+        }
         .mainIndex__subtitulo{
             margin-top: 4%;
             @include tamañoFuentex2(1rem);
         }
         .mainIndex__texto{
-            @include texto(center);
+            @include texto(center,1%);
             
         }
         

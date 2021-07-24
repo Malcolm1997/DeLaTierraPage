@@ -16,11 +16,15 @@
   font-family: 'Staatliches', cursive; }
   .mainIndex .mainIndex__titulo {
     font-size: 3rem; }
+  .mainIndex .mainIndex__parrafo .mainIndex__imagenSomos {
+    width: 8%;
+    margin: 1%; }
   .mainIndex .mainIndex__parrafo .mainIndex__subtitulo {
     margin-top: 4%;
     font-size: 2rem; }
   .mainIndex .mainIndex__parrafo .mainIndex__texto {
     margin: 4%;
+    margin-top: 1%;
     line-height: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
@@ -50,6 +54,7 @@
         object-fit: cover; }
       .mainAlimentacion .mainAlimentacion__divContenedores .mainAlimentacion__parrafo .mainAlimentacion__texto {
         margin: 4%;
+        margin-top: 4%;
         line-height: 2rem;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.25rem;
@@ -71,12 +76,17 @@
     font-size: 3rem; }
   .mainProductos .mainProductos__grupoDeTres {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: 5% auto; }
     .mainProductos .mainProductos__grupoDeTres .mainProductos__productoIndividual {
       width: 30%; }
       .mainProductos .mainProductos__grupoDeTres .mainProductos__productoIndividual .mainProductos__imagenProducto {
         width: 100%;
         padding: 5%; }
+      .mainProductos .mainProductos__grupoDeTres .mainProductos__productoIndividual .mainProductos__precio {
+        display: block;
+        font-size: 1.25rem;
+        margin: 3% auto; }
       .mainProductos .mainProductos__grupoDeTres .mainProductos__productoIndividual .mainProductos__carrito {
         width: 10%; }
 
@@ -88,13 +98,18 @@
   .mainTaller .mainTaller__titulo {
     font-size: 3rem; }
   .mainTaller .mainTaller__individual {
-    margin: 5% 0; }
+    margin: 3% 0; }
     .mainTaller .mainTaller__individual .mainTaller__imagen {
       width: 40%; }
+    .mainTaller .mainTaller__individual .mainTaller__precio {
+      margin-top: 3%;
+      margin-bottom: 0;
+      font-size: 1.25rem; }
     .mainTaller .mainTaller__individual .mainTaller__carrito {
       width: 7.5%; }
     .mainTaller .mainTaller__individual .mainTaller__texto {
       margin: 4%;
+      margin-top: 4%;
       line-height: 2rem;
       font-family: 'Montserrat', sans-serif;
       font-size: 1.25rem;
@@ -155,6 +170,11 @@
   font-family: 'Staatliches', cursive; }
   .mainContacto .mainContacto__titulo {
     font-size: 3rem; }
+  .mainContacto .mainContacto__texto {
+    margin-top: 3%;
+    margin: 3% auto 0 auto;
+    font-size: 1.25rem;
+    color: #505050; }
   .mainContacto .mainContacto__formulario {
     display: grid;
     grid-template-columns: repeat(2, 50%);
