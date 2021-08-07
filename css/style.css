@@ -17,7 +17,7 @@
   .mainIndex .mainIndex__titulo {
     font-size: 3rem; }
   .mainIndex .mainIndex__parrafo .mainIndex__imagenSomos {
-    width: 8%;
+    width: 4.5rem;
     margin: 1%; }
   .mainIndex .mainIndex__parrafo .mainIndex__subtitulo {
     margin-top: 4%;
@@ -30,6 +30,10 @@
     font-size: 1.25rem;
     text-align: center;
     color: #777777; }
+
+@media only screen and (max-width: 425px) {
+  .mainIndex .mainIndex__parrafo .mainIndex__imagenSomos {
+    width: 4rem; } }
 
 .mainAlimentacion {
   width: 80%;
@@ -88,7 +92,11 @@
         font-size: 1.25rem;
         margin: 3% auto; }
       .mainProductos .mainProductos__grupoDeTres .mainProductos__productoIndividual .mainProductos__carrito {
-        width: 10%; }
+        width: 2rem; }
+
+@media only screen and (max-width: 425px) {
+  .mainProductos .mainProductos__grupoDeTres .mainProductos__productoIndividual .mainProductos__carrito {
+    width: 1.25rem; } }
 
 .mainTaller {
   width: 80%;
@@ -106,7 +114,7 @@
       margin-bottom: 0;
       font-size: 1.25rem; }
     .mainTaller .mainTaller__individual .mainTaller__carrito {
-      width: 7.5%; }
+      width: 2.5rem; }
     .mainTaller .mainTaller__individual .mainTaller__texto {
       margin: 4%;
       margin-top: 4%;
@@ -116,6 +124,10 @@
       text-align: start;
       color: #777777;
       font-size: 1rem; }
+
+@media only screen and (max-width: 425px) {
+  .mainTaller .mainTaller__individual .mainTaller__carrito {
+    width: 2rem; } }
 
 .footer {
   padding: 2.5% 0;
@@ -154,13 +166,14 @@
 
 @media only screen and (max-width: 768px) {
   .footer {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "facebook whatsapp" "instagram tiktok" "mapa mapa" "derechos derechos";
+    grid-template-areas: "mapa mapa mapa mapa" "mapa mapa mapa mapa" "facebook whatsapp instagram tiktok" "derechos derechos derechos derechos";
     padding: 0 5px; }
     .footer .footer__redes .footer__imagenRedes {
       width: 30%; }
     .footer .footer__mapa {
+      margin-top: 4rem;
       text-align: center; } }
 
 .mainContacto {

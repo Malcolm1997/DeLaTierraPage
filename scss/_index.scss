@@ -6,7 +6,7 @@
     }
     .mainIndex__parrafo{
         .mainIndex__imagenSomos{
-            width: 8%;
+            width: 4.5rem;
             margin: 1%;
         }
         .mainIndex__subtitulo{
@@ -20,4 +20,16 @@
         
     }
 
+}
+
+
+@media only screen and (max-width:425px){
+
+    .mainIndex{
+        .mainIndex__parrafo{
+            .mainIndex__imagenSomos{
+                width: 4rem;
+            }
+        }
+    }
 }

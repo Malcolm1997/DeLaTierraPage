@@ -15,7 +15,7 @@
             font-size: 1.25rem;
         }
         .mainTaller__carrito{
-            width: 7.5%;
+            width: 2.5rem;
         }
         .mainTaller__texto{
             @include texto (start, 4%);
@@ -24,3 +24,13 @@
     }
 }
   
+@media only screen and (max-width:425px){
+
+    .mainTaller{
+        .mainTaller__individual{
+            .mainTaller__carrito{
+                width: 2rem;
+            }
+        }
+    }
+}
